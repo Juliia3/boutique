@@ -1,0 +1,75 @@
+@import '../../assets/styles/variables/_sizing.scss';
+@import '../../assets/styles/variables/_fonts.scss';
+
+.main {
+    padding: 50px 0 150px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: $phone) {
+            flex-direction: column;
+        }
+    }
+
+    &__text-block {
+        max-width: 550px;
+        @media (max-width: $phone) {
+            order: 2;
+            text-align: center;
+        }
+    } 
+
+    &__title {
+        font-weight: $title-weight;
+        font-size: $h1-size;
+        line-height: 83px;
+        margin-bottom: 40px;
+        @media (max-width: $phone) {
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text {
+        font-size: $text-size;
+        line-height: 30px;
+        font-family: $text-font;
+        margin-bottom: 40px;
+        @media (max-width: $phone) {
+            font-size: 10px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__button {
+        background-color: #fff350;
+        border-radius: 5px;
+        font-size: $p-size;
+        padding: 10px;
+    }
+
+    &__button:hover {
+        transform: scale(1.1);
+    }
+
+    &__img-block {
+        @media (max-width: $phone) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__img {
+        max-width: 619px;
+        @media (max-width: $phone) {
+            order: 1;
+            width: 350px;
+            margin-bottom: 30px;
+        }
+    }
+
+
+}

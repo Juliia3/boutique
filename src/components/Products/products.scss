@@ -1,0 +1,117 @@
+@import '../../assets/styles/variables/_sizing.scss';
+@import '../../assets/styles/variables/_fonts.scss';
+
+.products {
+    padding: 0 0 130px 0;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__line {
+        margin-bottom: 95px;
+    }
+
+    &__title {
+        font-size: $h2-size;
+        margin-bottom: 35px;
+    }
+
+    &__select {
+        margin-bottom: 50px;
+        display: flex;
+        gap: 50px;
+        @media (max-width: $phone) {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &__button {
+        width: 140px;
+        padding: 8px;
+        border-radius: none;
+        background-color: #ffffff;
+        font-size: $p-size;
+        border: 1px solid black;
+        border: none;
+    }
+
+    &__button:hover {
+        transform: scale(1.08);
+    }
+
+    &__card-block {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__card {
+        padding: 15px 15px 25px 15px;
+        width: 260px;
+        border: none;
+        border-radius: none;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+    }
+
+    &__card:hover {
+        cursor: pointer;
+    }
+
+    &__card-img {
+        width: 200px;
+        max-height: 200px;
+        margin-bottom: 15px;
+    }
+
+    &__card-category {
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    &__card-name {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card-title {
+        font-size: $subtitle-size;
+        margin-bottom: 20px;
+        color: black;
+    }
+
+    &__card-title:hover {
+        text-decoration: underline;
+    }
+
+    &__card-price {
+        font-weight: $title-weight;
+        color: #9e9e9e;
+    }
+
+    &__card-button {
+        padding: 10px; 
+        border-radius: none;
+        background-color: #fff350;
+        font-size: $p-size;
+        border: none;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        opacity: 1;
+    }
+
+    &__card-button:hover {
+        opacity: 1;
+    }
+
+    &__card-description {
+        margin-bottom: 30px;
+    }
+
+}

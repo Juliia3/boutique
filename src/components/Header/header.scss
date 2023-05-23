@@ -1,0 +1,42 @@
+@import '../../assets/styles/variables/_sizing.scss';
+@import '../../assets/styles/variables/_fonts.scss';
+
+
+.header {
+    padding: 50px 0;
+    color: black;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: $phone) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 118px;
+        font-family: $text-font;
+        font-size: $p-size;
+        line-height: 25px;
+        @media (max-width: $phone) {
+            gap: 40px;
+            line-height: 5px;
+        }
+    }
+
+    &__item:hover {
+        text-decoration: underline;
+    }
+
+    &__link {
+        color: black;
+    }
+    
+    &__logo {
+        color: black;
+    }
+}

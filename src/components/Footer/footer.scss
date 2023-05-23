@@ -1,0 +1,15 @@
+@import '../../assets/styles/variables/_sizing.scss';
+@import '../../assets/styles/variables/_fonts.scss';
+
+.footer {
+    background-color: #ffffff;
+    padding: 60px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 20px;
+        text-align: left;
+    }
+}

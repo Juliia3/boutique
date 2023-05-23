@@ -1,0 +1,16 @@
+@import '../../assets/styles/variables/_sizing.scss';
+@import '../../assets/styles/variables/_fonts.scss';
+
+.about {
+    padding: 50px;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    &__img {
+        border-radius: 10px;
+    }
+}
